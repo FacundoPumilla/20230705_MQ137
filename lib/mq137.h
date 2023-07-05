@@ -1,3 +1,14 @@
+/**
+ * @file mq137.h
+ * @author your name (coldmindsoluciones@gmail.com)
+ * @brief File to drive de mq137 sensor
+ * @version 0.1
+ * @date 2023-07-05
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 #include <Arduino.h>
 
 // Constante de aire limpio
@@ -19,9 +30,12 @@
 
 
 /**
- * @brief Get the Resistance Air Fresh object (R0) for use in calc PPM
- * @param MQ137_PIN entrada analogica destinada a MQ137
+ * @brief Get the Resistance Air Fresh object (R0) for use in calc PPM.
  * 
+ * Esta funcion trabaja de mejor manera con temperaturas de 20°C, humedad de 65%, concentracion
+ * de O2 de 21% y un valor de RL de 47kohm.
+ * 
+ * @param MQ137_PIN entrada analogica destinada a MQ137
  * @return float 
  */
 float getResistanceAirFresh(const byte MQ137_PIN){
