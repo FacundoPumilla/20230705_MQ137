@@ -23,16 +23,16 @@
 - `m = [log(y2) - log(y1)] / [log(x2) - log(x1)]`
 - `m = [log(0.75) - log(1)] / [log(108) - log(40)]`
 - `m = log(0.75/1) / log(108/40)`
-- `m = 0.866 / 1.643`
-- `m = 0.527`
+- `m = -0.125 / 0.431`
+- `m = -0.289`
 
 - Para calcular el punto medio de x1,x2 (azul)
 - `mp = 108-40 = 68`
 - `mp = 108 - (68/2) = 74`
 - Calcular la intercepcion (b)
 - `b = log(y) - m * log(x)`
-- `b = log(0.83) - 0.527 * log(74)`
-- `b = -1.066`
+- `b = log(0.83) - (-0.289) * log(74)`
+- `b = 0.459`
 
 ## Uso
 
